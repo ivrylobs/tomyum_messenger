@@ -32,6 +32,8 @@ $(document).on('click', '#resetPasswordBtn', function (event) {
     $('#resetPasswordForm').submit()
 });
 
+console.log('Js Bundle is loaded')
+
 let form = $('form');
 form.on('keypress', function (e) {
     if (e.keyCode === 13) {
@@ -39,6 +41,7 @@ form.on('keypress', function (e) {
         let registerBtn = form.find('#registerBtn');
         let forgetPasswordBtn = form.find('#forgetPasswordBtn');
         let resetPasswordBtn = form.find('#resetPasswordBtn');
+        console.log(registerBtn.length)
         if (loginBtn.length > 0) {
             loginBtn.trigger('click')
         } else if (registerBtn.length > 0) {

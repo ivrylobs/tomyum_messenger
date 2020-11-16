@@ -82,6 +82,7 @@ class RegisterController extends Controller
             'name' => htmlspecialchars($data['name']),
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'is_active' => 1,
         ]);
 
         $this->userRepository->assignRoles($user, ['role_id' => Role::MEMBER_ROLE]);

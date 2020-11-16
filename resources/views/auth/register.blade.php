@@ -76,6 +76,8 @@
                         </div>
                         <button type="button" id="registerBtn"
                                 class="btn btn-primary btn-block btn-flat">{{ __('messages.register') }}</button>
+                        <button type="button" id="homeBtn"
+                                class="btn btn-primary btn-block btn-flat">Home</button>
                         <a href="{{ url('/login') }}" class="text-center">{{ __('messages.already_have_membership') }}</a>
                     </form>
                 </div>
